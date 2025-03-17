@@ -1,5 +1,5 @@
 lib3mf (2.4.1-1) smurf; urgency=low
 
-  * source package automatically created by stdeb 0.10.1
+  * Initial packaging.
 
  -- Matthias Urlichs <matthias@urlichs.de>  Mon, 17 Mar 2025 10:45:09 +0100
