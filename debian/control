@@ -1,0 +1,33 @@
+Source: lib3mf
+Maintainer: Matthias Urlichs <matthias@urlichs.de>
+Section: python
+Priority: optional
+Build-Depends: dh-python, python3-setuptools, python3-all, debhelper (>= 12)
+Standards-Version: 4.7.0
+Homepage: None
+
+Package: python3-lib3mf
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: lib3mf is an implementation of the 3D Manufacturing Format f
+ # lib3mf
+ .
+ [![Build Status]](https://github.com/3MFConsortium/lib3mf/workflows/Build/badge.svg?branch=release%2F2.4.1)
+ [![Documentation Status](https://readthedocs.org/projects/lib3mf/badge/?version=master)](https://readthedocs.org/projects/lib3mf)
+ [![Version 2.4.1](https://img.shields.io/static/v1.svg?label=lib3mf&message=v2.4.1&color=green)]()
+ [![Supported platforms](https://img.shields.io/static/v1.svg?label=platform&message=windows%20%7C%20macos%20%7C%20linux&color=lightgrey)]()
+ [![Simplified BSD License](https://img.shields.io/static/v1.svg?label=license&message=BSD&color=green)](LICENSE)
+ [![codecov](https://codecov.io/gh/3MFConsortium/lib3mf/branch/develop/graph/badge.svg?token=3ARnBye33c)](https://codecov.io/gh/3MFConsortium/lib3mf)
+ .
+ lib3mf is a C++ implementation of the 3D Manufacturing Format file standard.
+ .
+ It provides 3MF reading and writing capabilities, as well as conversion and validation tools for input and output data.
+ lib3mf runs on Windows, Linux and MacOS and offers a clean and easy-to-use API in
+ [various programming languages](https://lib3mf.readthedocs.io/en/latest/#api-documentation)
+ to speed up the development and keep integration costs at a minimum.
+ .
+ As 3MF shall become an universal 3D Printing standard, its quick adoption is very important. 
+ This library shall lower all barriers of adoption to any possible user, let it be software 
+ providers, hardware providers, service providers or middleware tools.
+ .
+

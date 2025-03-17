@@ -2,4 +2,4 @@
 *.pyc
 build
 dist
-lib3mf.egg-info
+lib3mf.egg-info/.pybuild/
