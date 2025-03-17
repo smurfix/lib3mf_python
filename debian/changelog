@@ -1,4 +1,4 @@
-lib3mf (2.4.1-1) smurf; urgency=low
+python-lib3mf (2.4.1-1) smurf; urgency=low
 
   * Initial packaging.
 

@@ -1,4 +1,4 @@
-Source: lib3mf
+Source: python-lib3mf
 Maintainer: Matthias Urlichs <matthias@urlichs.de>
 Section: python
 Priority: optional
