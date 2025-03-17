@@ -1122,15 +1122,15 @@ class Wrapper:
 		else:
 			raise ELib3MFException(ErrorCodes.COULDNOTLOADLIBRARY)
 		
-		if (not libraryName) and (not symbolLookupMethodAddress):
-			libraryName = os.path.join(os.path.dirname(os.path.realpath(__file__)),'lib3mf')
+		if not libraryName and not symbolLookupMethodAddress:
+			libraryName = 'lib3mf'
 		
 		if libraryName is not None:
 			path = libraryName + '.' + ending
 			try:
-				self.lib = ctypes.CDLL(path)
+				self.lib = ctypes.cdll.LoadLibrary(path)
 			except Exception as e:
-				raise ELib3MFException(ErrorCodes.COULDNOTLOADLIBRARY, str(e) + '| "'+path + '"' )
+				raise ELib3MFException(ErrorCodes.COULDNOTLOADLIBRARY, f"{e} | {path !r}" )
 			
 			self._loadFunctionTable()
 		elif symbolLookupMethodAddress is not None:
